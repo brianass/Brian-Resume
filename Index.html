@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 💡 修改這裡：這是顯示在瀏覽器分頁上的標題 -->
+    <title>Brian Tseng | Technical AM 個人官網</title>
+    
+    <!-- 1. 引入 Tailwind CSS (快速排版工具) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 2. 引入 Google 字體 (選用了 Inter 搭配 Noto Sans TC) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Inter:wght@400;700;900&display=swap');
+        
+        :root { color-scheme: light !important; }
+
+        body { 
+            font-family: 'Inter', 'Noto Sans TC', sans-serif; 
+            background-color: #ffffff;
+        }
+
+        /* 讓捲動有種滑順感 */
+        html { scroll-behavior: smooth; }
+
+        /* 微小的動畫讓網站感覺更「陽光」活潑 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-up { animation: fadeIn 0.8s ease-out forwards; }
+    </style>
+</head>
+
+<body class="text-slate-900 antialiased bg-white">
+
+    <!-- 頂部簡約導覽 (Navbar) -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 px-8 py-6 border-b border-slate-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-[10px] font-black uppercase tracking-[0.3em]">
+            <!-- 💡 修改這裡：可以換成你的英文全名 -->
+            <div class="text-lg tracking-tighter text-slate-900">BRIAN Tseng</div>
+            <div class="hidden md:flex space-x-12">
+                <a href="#experience" class="hover:text-amber-500 transition-colors">Experience</a>
+                <a href="#contact" class="hover:text-amber-500 transition-colors">Contact</a>
+                <a href="aboutme.html"hover:text-amber-500 transition-colors>About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 【核心英雄區】左右分割設計 -->
+    <section id="about" class="min-h-screen flex flex-col md:flex-row pt-20">
+        
+        <!-- 左側：個人形象牆 -->
+        <div class="w-full md:w-1/2 h-[60vh] md:h-screen bg-slate-50 flex items-center justify-center p-6 md:p-16">
+            <div class="w-full h-full rounded-[48px] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] relative group">
+                <!-- 💡 修改這裡：將 src 替換成你的照片路徑。
+                     例如：你有一張照面放在 images 資料夾叫 brian.jpg，
+                     就改為 src="images/brian.jpg" -->
+                <img src="Me.jpg" 
+                     alt="Brian Tseng" 
+                     class="w-full h-full object-cover  transition-all duration-1000">
+                
+                <div class="absolute top-8 left-8 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full text-[10px] font-black tracking-widest uppercase">
+                    Hello! I'm Brian
+                </div>
+            </div>
+        </div>
+
+        <!-- 右側：強力的文字宣告 -->
+        <div class="w-full md:w-1/2 flex items-center p-8 md:p-20">
+            <div class="max-w-xl animate-up">
+                <!-- 💡 修改這裡：這條橫線可以換顏色，例如 bg-blue-500 代表藍色 -->
+                <div class="w-12 h-1 bg-amber-400 mb-8"></div> 
+                
+                <!-- 💡 修改這裡：你的核心職稱 -->
+                <h1 class="text-6xl md:text-[5.5rem] font-black mb-8 tracking-tighter leading-[0.9]">
+                    Technical <br> 
+                    <span class="text-slate-300">Account</span> <br>
+                    Manager
+                </h1>
+                
+                <!-- 💡 修改這裡：一段有溫度的自我介紹 (約 100 字內) -->
+                <p class="text-lg text-slate-500 leading-relaxed mb-12 font-medium">
+                    我擅長在「客戶需求」與「技術開發」之間建立高效的轉譯橋樑。
+                    擁有 150+ 企業諮詢實績，致力於透過 PHP 技術邏輯與數據洞察，
+                    為企業創造非線性的增長。
+                </p>
+
+                <div class="flex flex-col gap-5">
+                    <a href="#experience" class="w-full py-6 border-2 border-slate-900 rounded-2xl flex justify-between items-center px-10 group hover:bg-slate-900 hover:text-white transition-all shadow-sm">
+                        <span class="font-black uppercase tracking-widest text-xs">查看實戰案例 / Case Studies</span>
+                        <span class="text-xl group-hover:translate-x-3 transition-transform">→</span>
+                    </a>
+                    <!-- 💡 修改這裡：將你的 Email 填入 mailto: 後方 -->
+                    <a href="mailto:zxc1598732@gmail.com" class="w-full py-6 bg-slate-100 rounded-2xl flex justify-between items-center px-10 group hover:bg-amber-400 hover:text-white transition-all">
+                        <span class="font-black uppercase tracking-widest text-xs">與我聯繫 / Contact Me</span>
+                        <span class="text-xl group-hover:translate-x-3 transition-transform">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 【工作經歷區】整合 Canva 四段完整內容 -->
+    <section id="experience" class="py-32 px-8 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <h2 class="text-5xl font-black tracking-tighter uppercase">Work <br> Experience</h2>
+                <div class="text-slate-400 font-bold uppercase tracking-widest text-xs">
+                    2020 — 2026 (Ongoing)
+                </div>
+            </div>
+
+            <!-- 💡 職位 1：捷一資訊 (修改內容參考下方的 h3 與 p 標籤) -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-slate-200 group">
+                <div class="md:col-span-3 text-slate-300 font-black text-xl group-hover:text-amber-500 transition-colors italic">01</div>
+                <div class="md:col-span-4">
+                    <h3 class="text-2xl font-black text-slate-900">捷一資訊</h3>
+                    <p class="text-sm font-bold text-slate-400 uppercase mt-2">業務組長 | Feb 2024 - Apr 2025</p>
+                </div>
+                <div class="md:col-span-5 text-slate-500 text-sm leading-relaxed">
+                    <ul class="list-disc list-outside ml-4 space-y-5">
+                    <li>策略夥伴關係與市場開發：主動開發中華電信 Hami 與中部三大物業龍頭:（喬聯、居之友），成功簽署排他性服務條款，協助公司在競爭市場中建立穩固的商務護城河。</li>
+                        <li>
+                            全週期專案管理與執行：主導智慧社區 APP 與硬體設備導入，統籌工程、業務與客戶端三方資訊；透過需求訪談與進度排程，確保專案從教育訓練到施工交付如期完成。
+                        </li>
+                        <li>
+                            商務獲利與績效亮點：精準執行社群地推活動，進駐社區僅 2 週即實現 197 戶開通與 52 戶光纖網路置換；為公司創造單月 $488,800 營收，超額達成月目標 126%。
+                        </li></ul>
+                </div>
+            </div>
+
+            <!-- 💡 職位 2：奧理科技 (可以根據你最新的數據進行微調) -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-slate-200 group">
+                <div class="md:col-span-3 text-slate-300 font-black text-xl group-hover:text-amber-500 transition-colors italic">02</div>
+                <div class="md:col-span-4">
+                    <h3 class="text-2xl font-black text-slate-900">奧理科技 (Ocard)</h3>
+                    <p class="text-sm font-bold text-slate-400 uppercase mt-2">商務拓展顧問 | Jul 2021 - Mar 2023</p>
+                </div>
+                <div class="md:col-span-5 text-slate-500 text-sm leading-relaxed">
+                    <ul class="list-disc list-outside ml-4 space-y-5">
+                    <li>
+                        CRM 解決方案與市場教育：主導零售與餐飲品牌之 CRM 顧問諮詢，透過需求診斷提供客製化會員經營方案；協助新市場開發與產品推廣，成功將數位會員體系導入多元商戶端。
+                    </li>
+                    <li>
+                        系統整合與專案時程控管：負責跨部門與跨公司之系統整合會議，精確規劃 API 串接流程與任務節點；作為技術端與商務端之溝通橋樑，確保商戶端系統對接之交付品質。
+                    </li></ul>
+                </div>
+            </div>
+
+            <!-- 💡 職位 3：商線科技 (這裡你可以加入你最得意的專案名稱) -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-slate-200 group">
+                <div class="md:col-span-3 text-slate-300 font-black text-xl group-hover:text-amber-500 transition-colors italic">03</div>
+                <div class="md:col-span-4">
+                    <h3 class="text-2xl font-black text-slate-900">商線科技 (SHOPLINE)</h3>
+                    <p class="text-sm font-bold text-slate-400 uppercase mt-2">商務拓展顧問 | 2021</p>
+                </div>
+                <div class="md:col-span-5 text-slate-500 text-sm leading-relaxed">
+                    <ul class="list-disc list-outside ml-4 space-y-5">
+                        <li>
+                        發起零售品牌實戰，與主管討論後執行從供應鏈開發到金物流系統整合之 End-to-End 營運流程。
+                    </li>
+                    <li>
+                        將實測品牌做紀錄 於每週周會的時候跟團隊簡報、經驗痛點分享 並且將所學延伸到個人作業流程，改善個人銷售流程 並使個人業績成長25%-30%
+                    </li>
+                    <li>招商專案執行與 Lead 獲取 (Project Execution) 獨立負責中小型招商活動之規劃與執行，單場活動成功開發大量潛在客戶名單；運用顧問式溝通技術優化跟進流程，提升商務對接效率與簽約達成率。</li>
+                    <li>2年在職期間 協助過超過150家中小企業導入系統</li>
+                </ul>
+                    
+                </div>
+            </div>
+
+            <!-- 💡 職位 4：華勝顧問 (這裡可以強調你的「從 0 到 1」經驗) -->
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-slate-200 group border-b">
+                <div class="md:col-span-3 text-slate-300 font-black text-xl group-hover:text-amber-500 transition-colors italic">04</div>
+                <div class="md:col-span-4">
+                    <h3 class="text-2xl font-black text-slate-900">華勝顧問有限公司</h3>
+                    <p class="text-sm font-bold text-slate-400 uppercase mt-2">客服組長 | Jun 2020 - Feb 2021</p>
+                </div>
+                <div class="md:col-span-5 text-slate-500 text-sm leading-relaxed">
+                    <ul class="list-disc list-outside ml-4 space-y-5">
+                        <li>組織營運與體系籌建：主導新部門從 0 到 1 的團隊建設，制定標準化 SOP 作業流程與 KPI 考核機制；帶領 6 人團隊在第一季即實現業務承接量 5 倍之爆發性成長。</li>
+                    <li>技術需求轉譯與整合：負責 API 與特定客群之客製化需求規劃、產品技術排查及開發文檔撰寫；作為研發與商務端的溝通橋樑，確保技術執行與客戶需求的平衡。</li>
+                    <li space-y-6>品質控管與流程優化：建立 App 測試追蹤與問題回報機制，並透過製作內部教學文件與培訓規範，大幅縮短新進人員上手週期，顯著提升團隊整體處理效率。</li>
+                </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 【頁尾聯絡區】 -->
+    <footer id="contact" class="py-40 bg-white px-8 text-center overflow-hidden relative">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <h2 class="text-6xl md:text-8xl font-black mb-16 tracking-tighter leading-none uppercase">
+                Ready to <br> <span class="text-slate-200">Scale up?</span>
+            </h2>
+            
+            <!-- 💡 修改這裡：將對應的資訊填入 -->
+            <div class="flex flex-col md:flex-row justify-center items-center gap-12 font-black text-xs uppercase tracking-[0.4em]">
+                <!-- 1. 你的 Email -->
+                <a href="mailto:zxc1598732@gmail.com" class="border-b-2 border-slate-900 pb-2 hover:text-amber-500 hover:border-amber-500 transition-all">Email Me</a>
+                <!-- 2. 你的 電話 (格式：tel:+886...) -->
+                <a href="tel:+886963618938" class="border-b-2 border-slate-900 pb-2 hover:text-amber-500 hover:border-amber-500 transition-all">+886 963618938</a>
+                <!-- 3. 你的 LinkedIn 網址 (將 # 換成真實網址) -->
+                <a href="#" class="border-b-2 border-slate-900 pb-2 hover:text-amber-500 hover:border-amber-500 transition-all">LinkedIn</a>
+            </div>
+        </div>
+
+        <!-- 陽光感裝飾 -->
+        <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-amber-50 rounded-full opacity-50 blur-3xl"></div>
+    </footer>
+
+    <!-- 最底部標誌 -->
+    <div class="bg-slate-50 py-10 text-center border-t border-slate-100">
+        <!-- 💡 修改這裡：年份與名字 -->
+        <p class="text-[9px] font-black text-slate-300 uppercase tracking-[0.5em]">
+            © 2026 Brian Tseng | Defined by Logic, Driven by Sunshine
+        </p>
+    </div>
+
+</body>
+</html>

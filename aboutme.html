@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Brian | 關於我 - 技術轉譯者</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Inter:wght@400;700;900&display=swap');
+        
+        :root { color-scheme: light !important; }
+
+        body { 
+            font-family: 'Inter', 'Noto Sans TC', sans-serif; 
+            background-color: #ffffff !important;
+            color: #1e293b !important;
+        }
+
+        /* 陽光溫暖的微動畫 */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-content { animation: slideUp 0.8s ease-out forwards; }
+    </style>
+</head>
+
+<body class="bg-white antialiased">
+
+    <!-- 頂部導覽列 -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 px-8 py-6 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-[10px] font-black uppercase tracking-[0.3em]">
+            <a href="index.html" class="text-lg tracking-tighter text-slate-900">BRIAN Tseng</a>
+            <a href="index.html" class="hover:text-amber-500 transition-colors text-slate-900">Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- 主內容區 -->
+    <main class="pt-40 pb-24 px-8 max-w-5xl mx-auto animate-content">
+        
+        <!-- 第一部分：價值主張 (The Value Proposition) -->
+        <header class="mb-24">
+            <h1 class="text-5xl md:text-8xl font-black mb-8 tracking-tighter uppercase leading-[0.85] text-slate-900">
+                I Build <span class="text-slate-200">the Bridge</span> <br> Between Code <br> & Business.
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-500 font-medium max-w-3xl leading-relaxed">
+                我不是工程師，也不是傳統業務。我是一名 <span class="text-slate-900 font-black border-b-4 border-amber-100">Technical Account Manager</span>，致力於消除商業目標與技術開發之間的溝通斷層。
+            </p>
+        </header>
+
+        <!-- 第二部分：我的故事 (The Story / Why Me) -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-16 mb-32">
+            <div class="md:col-span-7 space-y-8 text-slate-600 leading-relaxed text-lg">
+                <h3 class="text-slate-900 font-black text-xs uppercase tracking-[0.3em]">My Philosophy</h3>
+                <p>
+                    在過去 1.5 年的商務開發經驗中，我輔導超過 150 家中小企業導入電商與 CRM 系統。我發現，許多專案的延宕並非源於技術不足，而是因為「商務需求」被錯誤地翻譯成「技術規格」。
+                </p>
+                <p>
+                    在捷一資訊任職期間，我曾主導智慧社區 App 的功能定義。我透過深度訪談管理員與住戶，將模糊的需求轉化為精準的對帳與包裹管理邏輯。這項改動讓團隊在兩週內達成 <span class="text-slate-900 font-bold">126% 的月目標</span>，創造單月 $488,800 的產值。
+                </p>
+                <p>
+                    這也是為什麼我現在投入職訓局，專攻 <span class="text-slate-900 font-bold">PHP 與 MySQL</span>。我學習寫 Code 不是為了轉行，而是為了能站在工程師的角度思考資源分配，確保每一次開發都能精準擊中商業痛點。
+                </p>
+            </div>
+
+            <!-- 第三部分：核心能力 (Skills & Stats) -->
+            <div class="md:col-span-5 space-y-12 bg-slate-50 p-10 rounded-[48px] border border-slate-100">
+                <div>
+                    <h3 class="text-slate-900 font-black text-xs uppercase tracking-[0.3em] mb-6">Expertise</h3>
+                    <ul class="space-y-4 font-bold text-slate-900">
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-amber-400 rounded-full"></span> 顧問式銷售 (Consultative Sales)
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-amber-400 rounded-full"></span> 產品功能定義 (PRD Writing)
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-amber-400 rounded-full"></span> 跨部門溝通 (Cross-functional Sync)
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-1.5 h-1.5 bg-amber-400 rounded-full"></span> PHP / SQL 邏輯理解
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pt-8 border-t border-slate-200">
+                    <h3 class="text-slate-900 font-black text-xs uppercase tracking-[0.3em] mb-4">Current Learning</h3>
+                    <div class="space-y-4">
+                        <div class="text-xs font-black text-slate-400">WEB DEVELOPMENT PROGRESS</div>
+                        <div class="w-full bg-slate-200 h-1 rounded-full overflow-hidden">
+                            <div class="bg-amber-400 h-full w-[70%]"></div>
+                        </div>
+                        <p class="text-xs text-slate-400 italic">"學習技術是為了獲得更強的商務判斷力。"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第四部分：行動呼籲 (Call to Action) -->
+        <div class="text-center py-20 border-t border-slate-100">
+            <h2 class="text-3xl font-black mb-8 uppercase tracking-tighter">想知道我如何為您的團隊<br>帶來 126% 的增長嗎？</h2>
+            <a href="index.html#contact" class="inline-block px-12 py-5 bg-slate-900 text-white rounded-2xl font-black uppercase tracking-widest hover:bg-amber-400 transition-all shadow-xl">
+                Let's talk business
+            </a>
+        </div>
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="py-12 bg-slate-50 text-center border-t border-slate-100">
+        <p class="text-[9px] font-black text-slate-300 uppercase tracking-[0.5em]">
+            © 2026 Brian Tseng | Designed for Impact
+        </p>
+    </footer>
+
+</body>
+</html>

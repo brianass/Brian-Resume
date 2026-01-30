@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Brian | 關於我 - 技術轉譯者</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Inter:wght@400;700;900&display=swap');
+        
+        :root { color-scheme: light !important; }
+
+        body { 
+            font-family: 'Inter', 'Noto Sans TC', sans-serif; 
+            background-color: #ffffff !important;
+            color: #1e293b !important;
+        }
+
+        /* 溫暖的進場動畫 */
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-content { animation: slideUp 0.8s ease-out forwards; }
+    </style>
+</head>
+
+<body class="bg-white antialiased">
+
+    <!-- 導覽列 -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 px-8 py-6 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-[10px] font-black uppercase tracking-[0.3em]">
+            <a href="index.html" class="text-lg tracking-tighter text-slate-900">BRIAN TAM</a>
+            <a href="index.html" class="hover:text-amber-500 transition-colors text-slate-900 font-bold uppercase">Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- 主內容區 -->
+    <main class="pt-40 pb-24 px-8 max-w-5xl mx-auto animate-content">
+        
+        <!-- 【頂層：價值主張與核心故事】 -->
+        <header class="mb-24">
+            <h1 class="text-5xl md:text-8xl font-black mb-8 tracking-tighter uppercase leading-[0.85] text-slate-900">
+                Building <span class="text-slate-200">Bridges</span> <br> Between Code <br> & Business.
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-500 font-medium max-w-3xl leading-relaxed">
+                我致力於消除商業目標與技術開發之間的溝通斷層。身為一名 <span class="text-slate-900 font-black border-b-4 border-amber-100 uppercase">Technical AM</span>，我不只處理客戶關係，更負責優化產品的底層邏輯。
+            </p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-16 mb-24">
+            <div class="md:col-span-8 space-y-8 text-slate-600 leading-relaxed text-lg">
+                <h3 class="text-slate-900 font-black text-xs uppercase tracking-[0.3em]">My Philosophy</h3>
+                <p>
+                    在過去 1.5 年的商務開發經驗中，我輔導超過 150 家企業導入電商與 CRM 系統。我深信，最成功的專案並非來自開發最多的功能，而是來自精準定義出「對客戶最有價值」的核心。
+                </p>
+                <p>
+                    目前我正專攻 <span class="text-slate-900 font-bold">PHP 與 MySQL</span>，我學習技術不是為了轉職，而是為了能站在開發者的角度思考資源分配，確保每一次產品改版都能精準擊中商業痛點。
+                </p>
+            </div>
+            <div class="md:col-span-4 bg-slate-50 p-8 rounded-[32px] border border-slate-100">
+                <h3 class="text-slate-900 font-black text-xs uppercase tracking-[0.3em] mb-6">Expertise</h3>
+                <ul class="space-y-4 font-bold text-slate-900 text-sm">
+                    <li>● 顧問式銷售 (Consultative Sales)</li>
+                    <li>● 產品功能定義 (PRD Writing)</li>
+                    <li>● 跨部門溝通 (Cross-functional Sync)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 【下半部：左右分割配置 + 垂直分隔線】 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 pt-24 border-t border-slate-100">
+            
+            <!-- 左手邊：未來展望 (Vision) -->
+            <div class="space-y-8 md:pr-16 pb-12 md:pb-0">
+                <h3 class="text-slate-900 font-black text-xs uppercase tracking-[0.3em]">Future Vision</h3>
+                <div class="space-y-6">
+                    <div class="group">
+                        <h4 class="font-black text-slate-900 uppercase mb-2 group-hover:text-amber-500 transition-colors">深化技術判斷力</h4>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            精進 PHP 與資料庫架構理解，目標是在專案評估階段即可預判 90% 的技術瓶頸，為開發團隊爭取最高效率。
+                        </p>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-black text-slate-900 uppercase mb-2 group-hover:text-amber-500 transition-colors">數據驅動業務增長</h4>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            將 SQL 數據分析應用於 AM 角色，從海量資料中挖掘痛點，讓每一次提案都有數據背書。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右手邊：個人興趣與優勢 (Interests & Advantage) -->
+            <div class="space-y-8 md:border-l md:border-slate-100 md:pl-16 pt-12 md:pt-0 border-t md:border-t-0 border-slate-100">
+                <h3 class="text-slate-900 font-black text-xs uppercase tracking-[0.3em]">Personal Interests</h3>
+                <div class="space-y-6">
+                    <div class="group">
+                        <h4 class="font-black text-slate-900 uppercase mb-2 group-hover:text-amber-500 transition-colors">策略遊戲與邏輯思考</h4>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            我熱衷於德州撲克與策略遊戲。這訓練了我在高壓環境下的「勝率計算」與「心理判斷」，這直接轉化為我處理商業談判與利害關係人時的判斷力。
+                        </p>
+                    </div>
+                    <div class="group">
+                        <h4 class="font-black text-slate-900 uppercase mb-2 group-hover:text-amber-500 transition-colors">耐力運動與目標導向</h4>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            定期的長跑訓練培養了我面對長期專案的韌性。我將每一次的業績開發都視為一場馬拉松，不追求短期的衝刺，而是在精準的節奏下確保最後的 126% 達成。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 💡 已移除原有的「行動呼籲」黑底區塊，保持頁面清爽 -->
+
+    </main>
+
+    <footer class="py-12 bg-slate-50 text-center border-t border-slate-100">
+        <p class="text-[9px] font-black text-slate-300 uppercase tracking-[0.5em]">
+            © 2026 Brian Tam | Logic × Passion × Sunshine
+        </p>
+    </footer>
+
+</body>
+</html>
