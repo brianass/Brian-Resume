@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 💡 修改這裡：這是顯示在瀏覽器分頁上的標題 -->
-    <title>Brian Tseng | Technical AM 個人官網</title>
     
-    <!-- 1. 引入 Tailwind CSS (快速排版工具) -->
+    <title>Brian Tseng | Technical AM 個人官網</title>
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- 2. 引入 Google 字體 (選用了 Inter 搭配 Noto Sans TC) -->
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Inter:wght@400;700;900&display=swap');
         
@@ -20,10 +18,9 @@
             background-color: #ffffff;
         }
 
-        /* 讓捲動有種滑順感 */
+        
         html { scroll-behavior: smooth; }
 
-        /* 微小的動畫讓網站感覺更「陽光」活潑 */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -34,25 +31,24 @@
 
 <body class="text-slate-900 antialiased bg-white">
 
-    <!-- 頂部簡約導覽 (Navbar) -->
+    
     <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 px-4 md:px-8 py-5 border-b border-slate-100">
         <div class="max-w-7xl mx-auto flex justify-between items-center font-black uppercase tracking-[0.1em]">
             
-            <!-- 1. 標誌：手機版改 text-lg (確保空間), 電腦版 text-3xl -->
+            
             <a href="#hero" class="text-lg md:text-3xl tracking-tighter text-slate-900 font-black hover:text-amber-500 transition-all shrink-0">
                 BRIANs&nbsp;&nbsp;PROFILE
             </a>
 
-            <!-- 💡 2. 手機版專用按鈕 (只在手機出現) -->
+            
             <div class="md:hidden flex items-center">
                 <a href="moreaboutme.html" class="px-4 py-2 rounded-full bg-amber-400 text-white text-[10px] font-black shadow-lg shadow-amber-100 uppercase tracking-widest active:scale-95 transition-transform">
                     About Me
                 </a>
             </div>
 
-            <!-- 3. 電腦版選單 (手機隱藏) -->
             <div class="hidden md:flex items-center space-x-6">
-                <a href="about.html" class="px-5 py-2 rounded-full border border-slate-100 hover:bg-amber-400 hover:border-amber-400 hover:text-white transition-all duration-300 text-[12px]">
+                <a href="moreaboutme.html" class="px-5 py-2 rounded-full border border-slate-100 hover:bg-amber-400 hover:border-amber-400 hover:text-white transition-all duration-300 text-[12px]">
                     More About Me
                 </a>
                 <a href="#contact" class="px-5 py-2 rounded-full border border-slate-100 hover:bg-amber-400 hover:border-amber-400 hover:text-white transition-all duration-300 text-[12px]">
@@ -62,40 +58,35 @@
         </div>
     </nav>
 
-    <!-- 【核心英雄區】左右分割設計 -->
     <section id="about" class="min-h-screen flex flex-col md:flex-row pt-20">
         
-        <!-- 左側：個人形象牆 -->
+        
         <div class="w-full md:w-1/2 h-[60vh] md:h-screen bg-slate-50 flex items-center justify-center p-6 md:p-16">
             <div class="w-full h-full rounded-[48px] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] relative group">
-                <!-- 💡 修改這裡：將 src 替換成你的照片路徑。
-                     例如：你有一張照面放在 images 資料夾叫 brian.jpg，
-                     就改為 src="images/brian.jpg" -->
+                
                 <img src="Me.jpg" 
                      alt="Brian Tseng" 
                      class="w-full h-full object-cover  transition-all duration-1000">
                 
-                <div class="absolute top-8 left-8 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full text-[10px] font-black tracking-widest uppercase">
-                    Hello! I'm Brian
-                </div>
+                
             </div>
         </div>
 
-        <!-- 右側：強力的文字宣告 -->
+        
         <div class="w-full md:w-1/2 flex items-center p-8 md:p-20">
             <div class="max-w-xl animate-up">
-                <!-- 💡 修改這裡：這條橫線可以換顏色，例如 bg-blue-500 代表藍色 -->
+                
                 <div class="w-12 h-1 bg-amber-400 mb-8"></div> 
                 <span class="text-[15px] font-black tracking-[0.4em] text-yellow-500 uppercase">
                         Apply for [默聲創意有限公司]
-                <!-- 💡 修改這裡：你的核心職稱 -->
+                
                 <h1 class="text-6xl md:text-[5rem] font-black mb-8 tracking-tighter leading-[0.9]">
                     Technical <br> 
                     <span class="text-slate-300">Account</span> <br>
                     Manager
                 </h1>
                 
-                <!-- 💡 修改這裡：一段有溫度的自我介紹 (約 100 字內) -->
+                
                 <p class="text-lg text-slate-500 leading-relaxed mb-12 font-medium">
                     我是 Brian，擅長在客戶需求與技術開發之間建立高效的溝通橋樑。過去擁有輔導 150+家企業導入系統的實戰經驗，能將商務需求轉化為清晰的執行規劃。目前正深入學習 HTML 與 CSS 網頁佈局，旨在透過理解前端展示邏輯來優化專案流程，成為開發團隊與客戶之間最專業的對接點。
                     
@@ -106,7 +97,7 @@
                         <span class="font-black uppercase tracking-widest text-xs">查看工作經歷 / HighLights</span>
                         <span class="text-xl group-hover:translate-x-3 transition-transform">→</span>
                     </a>
-                    <!-- 💡 修改這裡：將你的 Email 填入 mailto: 後方 -->
+                    
                     <a href="#contact" class="w-full py-6 bg-slate-100 rounded-2xl flex justify-between items-center px-10 group hover:bg-amber-400 hover:text-white transition-all">
                         <span class="font-black uppercase tracking-widest text-xs">與我聯繫 / Contact Me</span>
                         <span class="text-xl group-hover:translate-x-3 transition-transform">→</span>
@@ -116,7 +107,7 @@
         </div>
     </section>
 
-    <!-- 【工作經歷區】整合 Canva 四段完整內容 -->
+    
     <section id="experience" class="py-32 px-8 bg-slate-50">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
@@ -126,7 +117,7 @@
                 </div>
             </div>
 
-            <!-- 💡 職位 1：捷一資訊 (修改內容參考下方的 h3 與 p 標籤) -->
+             
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-slate-200 group">
                 <div class="md:col-span-3 text-slate-300 font-black text-xl group-hover:text-amber-500 transition-colors italic">01</div>
                 <div class="md:col-span-4">
@@ -145,7 +136,7 @@
                 </div>
             </div>
 
-            <!-- 💡 職位 2：奧理科技 (可以根據你最新的數據進行微調) -->
+            
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-slate-200 group">
                 <div class="md:col-span-3 text-slate-300 font-black text-xl group-hover:text-amber-500 transition-colors italic">02</div>
                 <div class="md:col-span-4">
@@ -163,7 +154,7 @@
                 </div>
             </div>
 
-            <!-- 💡 職位 3：商線科技 (這裡你可以加入你最得意的專案名稱) -->
+            
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-slate-200 group">
                 <div class="md:col-span-3 text-slate-300 font-black text-xl group-hover:text-amber-500 transition-colors italic">03</div>
                 <div class="md:col-span-4">
@@ -185,7 +176,7 @@
                 </div>
             </div>
 
-            <!-- 💡 職位 4：華勝顧問 (這裡可以強調你的「從 0 到 1」經驗) -->
+            
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-16 border-t border-slate-200 group border-b">
                 <div class="md:col-span-3 text-slate-300 font-black text-xl group-hover:text-amber-500 transition-colors italic">04</div>
                 <div class="md:col-span-4">
@@ -204,30 +195,30 @@
         </div>
     </section>
 
-    <!-- 【頁尾聯絡區】 -->
+    
     <footer id="contact" class="py-40 bg-white px-8 text-center overflow-hidden relative">
         <div class="max-w-4xl mx-auto relative z-10">
             <h2 class="text-6xl md:text-8xl font-black mb-16 tracking-tighter leading-none uppercase">
                 Welcome To <br> <span class="text-slate-200">Contact Me!</span>
             </h2>
             
-            <!-- 💡 修改這裡：將對應的資訊填入 -->
+          
             <div class="flex flex-col md:flex-row justify-center items-center gap-12 font-black text-xs uppercase tracking-[0.4em]">
-                <!-- 1. 你的 Email -->
+                
                 <a href="mailto:zxc1598732@gmail.com" class="border-b-2 border-slate-900 pb-2 hover:text-amber-500 hover:border-amber-500 transition-all">Email Me</a>
-                <!-- 2. 你的 電話 (格式：tel:+886...) -->
+                
                 <a href="tel:+886963618938" class="border-b-2 border-slate-900 pb-2 hover:text-amber-500 hover:border-amber-500 transition-all">+886 963618938</a>
             
             </div>
         </div>
 
-        <!-- 陽光感裝飾 -->
+        
         <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-amber-50 rounded-full opacity-50 blur-3xl"></div>
     </footer>
 
-    <!-- 最底部標誌 -->
+
     <div class="bg-slate-50 py-10 text-center border-t border-slate-100">
-        <!-- 💡 修改這裡：年份與名字 -->
+        
         <p class="text-[9px] font-black text-slate-300 uppercase tracking-[0.5em]">
             © 2026 Brian Tseng | Defined by Logic, Driven by Sunshine
         </p>
