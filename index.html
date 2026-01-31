@@ -35,17 +35,29 @@
 <body class="text-slate-900 antialiased bg-white">
 
     <!-- 頂部簡約導覽 (Navbar) -->
-    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 px-8 py-6 border-b border-slate-50">
-        <div class="max-w-7xl mx-auto flex justify-between items-center text-[20px] font-black uppercase tracking-[0.1em]">
-            <!-- 💡 修改這裡：可以換成你的英文全名 -->
-            <a href="#hero" class="text-3xl tracking-tighter text-slate-900 font-black hover:text-amber-500 transition-all">
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 px-4 md:px-8 py-5 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto flex justify-between items-center font-black uppercase tracking-[0.1em]">
+            
+            <!-- 1. 標誌：手機版改 text-lg (確保空間), 電腦版 text-3xl -->
+            <a href="#hero" class="text-lg md:text-3xl tracking-tighter text-slate-900 font-black hover:text-amber-500 transition-all shrink-0">
                 BRIANs&nbsp;&nbsp;PROFILE
             </a>
-            <div class="hidden md:flex space-x-12">
-                <a href="moreaboutme.html"class="px-5 py-2 rounded-full border border-slate-100 hover:bg-amber-400 hover:border-amber-400 hover:text-white transition-all duration-300">
-                    More About Me</a>
-                <a href="#contact" class="px-5 py-2 rounded-full border border-slate-100 hover:bg-amber-400 hover:border-amber-400 hover:text-white transition-all duration-300">Contact</a>
-                
+
+            <!-- 💡 2. 手機版專用按鈕 (只在手機出現) -->
+            <div class="md:hidden flex items-center">
+                <a href="moreaboutme.html" class="px-4 py-2 rounded-full bg-amber-400 text-white text-[10px] font-black shadow-lg shadow-amber-100 uppercase tracking-widest active:scale-95 transition-transform">
+                    About Me
+                </a>
+            </div>
+
+            <!-- 3. 電腦版選單 (手機隱藏) -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="about.html" class="px-5 py-2 rounded-full border border-slate-100 hover:bg-amber-400 hover:border-amber-400 hover:text-white transition-all duration-300 text-[12px]">
+                    More About Me
+                </a>
+                <a href="#contact" class="px-5 py-2 rounded-full border border-slate-100 hover:bg-amber-400 hover:border-amber-400 hover:text-white transition-all duration-300 text-[12px]">
+                    Contact
+                </a>
             </div>
         </div>
     </nav>
@@ -138,7 +150,7 @@
                 <div class="md:col-span-3 text-slate-300 font-black text-xl group-hover:text-amber-500 transition-colors italic">02</div>
                 <div class="md:col-span-4">
                     <h3 class="text-2xl font-black text-slate-900">奧理科技 (Ocard)</h3>
-                    <p class="text-sm font-bold text-slate-400 uppercase mt-2">商務拓展顧問 | Mar 2023 - Mar 2024</p>
+                    <p class="text-sm font-bold text-slate-400 uppercase mt-2">商務拓展顧問 | Mar 2023 - Apl 2024</p>
                 </div>
                 <div class="md:col-span-5 text-slate-500 text-sm leading-relaxed">
                     <ul class="list-disc list-outside ml-4 space-y-5">
